@@ -1,4 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */
+// basically pain points
 import {
   ChatAltIcon,
   DocumentReportIcon,
@@ -12,51 +12,44 @@ import {
 
 const features = [
   {
-    name: 'Unlimited Inboxes',
+    name: 'Unified Inbox',
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+      'Centralize communication with your guests, cleaners, maintenance team and property owners.',
     icon: InboxIcon,
   },
   {
-    name: 'Manage Team Members',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: UsersIcon,
-  },
-  {
-    name: 'Spam Report',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: TrashIcon,
-  },
-  {
-    name: 'Compose in Markdown',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: PencilAltIcon,
-  },
-  {
-    name: 'Team Reporting',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: DocumentReportIcon,
-  },
-  {
-    name: 'Saved Replies',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: 'Synced Calendars',
+    description: 'Have calendars synced across all sales channels',
     icon: ReplyIcon,
   },
   {
-    name: 'Email Commenting',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: 'Manage Team Members',
+    description: 'Make an assignments, automate back-and-forth routine',
+    icon: UsersIcon,
+  },
+  {
+    name: 'Grow in Revenue',
+    description: 'Set dynamic pricing based on demand',
+    icon: DocumentReportIcon,
+  },
+  {
+    name: 'Powerful automation',
+    description: 'Automate tasks',
+    icon: PencilAltIcon,
+  },
+  {
+    name: 'Quorter reports',
+    description: 'Insightful graphs',
+    icon: TrashIcon,
+  },
+  {
+    name: 'Customer support',
+    description: "We're always here to help",
     icon: ChatAltIcon,
   },
   {
-    name: 'Connect with Customers',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: 'Manage on-the-go',
+    description: 'Mobile app',
     icon: HeartIcon,
   },
 ]
@@ -66,7 +59,7 @@ export const FourColumnsGridFeatures = () => {
     <div className="bg-indigo-700">
       <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
         <h2 className="text-3xl font-extrabold text-white tracking-tight">
-          Inbox support built for efficiency
+          Easy Property Managementent
         </h2>
         <p className="mt-4 max-w-3xl text-lg text-indigo-200">
           Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
