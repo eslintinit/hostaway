@@ -1,4 +1,4 @@
-import { Footer } from 'components/molecules'
+import { Footer } from '@/molecules'
 import {
   Hero,
   ValuePropositionsThreeColumn,
@@ -10,7 +10,7 @@ import {
   SimpleFeatureGrid,
   Reviews,
   Partners,
-} from 'components/organisms'
+} from '@/organisms'
 
 export default function Home() {
   return (
