@@ -1,6 +1,6 @@
-export const Title = ({ children, ...props }) => (
+export const Title = ({ children, className = '', ...props }) => (
   <h1
-    className="text-4xl tracking-tight font-medium text-gray-800 sm:text-5xl md:text-6xl"
+    className={`text-4xl tracking-tight font-medium text-gray-700 sm:text-5xl md:text-5xl ${className}`}
     {...props}
   >
     {children}

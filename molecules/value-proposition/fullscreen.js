@@ -1,32 +1,12 @@
-export const ValueProposition = ({ feature, fullscreen, ...props }) => {
-  if (fullscreen) {
-    return <FullscreenValueProposition {...props} />
-  }
-
-  return (
-    <div key={feature.name}>
-      <dt>
-        <div className="flex items-center justify-center rounded-md bg-brightOrange text-white">
-          <feature.icon className="h-6 w-6" aria-hidden="true" />
-        </div>
-        <p className="mt-5 text-lg leading-6 font-medium text-gray-900">
-          {feature.name}
-        </p>
-      </dt>
-      <dd className="mt-2 text-base text-gray-500">{feature.description}</dd>
-    </div>
-  )
-}
-
 import { InboxIcon, SparklesIcon } from '@heroicons/react/outline'
 
-export default function FullscreenValueProposition({
+export const ValuePropositionFullscreen = ({
   left,
   right,
   title,
   img,
   feat,
-}) {
+}) => {
   return (
     <div className="relative bg-white pt-16 pb-32 overflow-hidden">
       {left && (

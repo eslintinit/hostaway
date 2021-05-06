@@ -9,6 +9,8 @@ import {
 
 const HomeNew = () => (
   <div className="flex flex-col align-center w-full">
+    {/*
+     */}
     <Header />
     <ConversionGoalOne />
     <ConversionGoalTwo />
@@ -16,6 +18,8 @@ const HomeNew = () => (
     <ConversionGoalFour />
     <Engagement />
     <Footer />
+    {/*
+     */}
   </div>
 )
 

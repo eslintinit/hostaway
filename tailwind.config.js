@@ -10,6 +10,9 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        primary: 'hsl(22deg 100% 52%)',
+        secondary: '#4eb9da',
+        secondaryDark: '#2588a7',
         brightOrange: 'hsl(22deg 100% 52%)',
         someGray: '#333030',
         black: colors.black,

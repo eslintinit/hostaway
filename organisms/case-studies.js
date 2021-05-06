@@ -1,1 +1,1 @@
-export const CaseStudies = () => <div>CaseStudies</div>
+export const CaseStudies = () => <img src="/case-studies.png" />

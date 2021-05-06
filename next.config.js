@@ -6,4 +6,8 @@ module.exports = {
     config.resolve.modules.push(path.resolve('./'))
     return config
   },
+  plugins: [
+    // ...
+    require('@tailwindcss/forms'),
+  ],
 }

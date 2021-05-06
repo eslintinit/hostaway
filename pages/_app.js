@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Hostaway</title>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="stylesheet" href="/css/index.css" />
       </Head>
       <Component {...pageProps} />
     </>
