@@ -1,5 +1,5 @@
-export const Logo = ({ channel = 'hostaway' }) => {
-  if (channel !== 'hostaway') return <SalesChannelLogo />
+export const Logo = ({ channel = 'hostaway', logo, style = {} }) => {
+  if (logo) return <SalesChannelLogo logo={logo} style={style} />
 
   return (
     <div>
@@ -9,12 +9,11 @@ export const Logo = ({ channel = 'hostaway' }) => {
   )
 }
 
-const SalesChannelLogo = () => (
-  <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-    <img
-      className="h-12"
-      src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-      alt="Workcation"
-    />
+const SalesChannelLogo = ({ logo, style }) => (
+  <div
+    className="col-span-2 flex justify-center items-center md:col-span-3 lg:col-span-1"
+    style={style}
+  >
+    <img className={`w-auto ${logo.size}`} src={logo.src} alt="Logo" />
   </div>
 )

@@ -1,26 +1,29 @@
 import {
-  GlobeAltIcon,
+  HomeIcon,
+  ClockIcon,
   LightningBoltIcon,
   ScaleIcon,
+  CashIcon,
 } from '@heroicons/react/outline'
 
 export const valuePropositions = [
   {
     name: 'Manage your properties with ease',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: GlobeAltIcon,
+      'Manage everything from the one platform: team, assignments, revenue. Be in control of your properties operations',
+    icon: HomeIcon,
   },
   {
     name: 'Save time and money',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: LightningBoltIcon,
+      'Automate routine tasks such as sending a message on guest check-in or appointing cleaning on guest check-out.',
+    // icon: LightningBoltIcon,
+    icon: ClockIcon,
   },
   {
     name: 'Grow your revenue',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ScaleIcon,
+      'See how properties are performing and find about new ways to improve it. Set dynamic pricing based on demand, save on management costs and grow your business!',
+    icon: CashIcon,
   },
 ]

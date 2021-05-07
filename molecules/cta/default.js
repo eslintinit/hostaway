@@ -1,6 +1,6 @@
 import { Button } from 'atoms'
 
-export const CTA = ({ bg = 'gray-50' }) => (
+export const CTADefault = ({ bg = 'gray-50' }) => (
   <div className={`bg-${bg} w-full`}>
     <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

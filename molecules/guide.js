@@ -1,15 +1,14 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { InboxIcon, SparklesIcon } from '@heroicons/react/outline'
+import { BookOpenIcon } from '@heroicons/react/outline'
 
 export const Guide = () => (
-  <div className="relative bg-white pt-16 pb-32 overflow-hidden">
+  <div className="relative bg-white pt-16 pb-24 overflow-hidden">
     <div>
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
         <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
           <div>
             <div>
               <span className="h-12 w-12 rounded-md flex items-center justify-center bg-primary">
-                <SparklesIcon
+                <BookOpenIcon
                   className="h-6 w-6 text-white"
                   aria-hidden="true"
                 />
@@ -29,7 +28,7 @@ export const Guide = () => (
               <div className="mt-8">
                 <a
                   href="#"
-                  className="inline-flex text-base font-medium rounded-md text-primary hover:underline"
+                  className="inline-flex text-base font-medium rounded-md text-primary hover:underline text-lg"
                 >
                   Download guide
                 </a>

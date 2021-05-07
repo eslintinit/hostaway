@@ -1,42 +1,70 @@
+// task management
+// reservation lifecycle
+// notifications system
+// user management
+// smart pricing
+// guest invoicing
+// guest reviews (centralize all of your guest reviews is one place, allow hosts to reply it)
+// owner statement (give a monhtly reports to your property owners)
+//
+// booking website
+// wordpress plugin (receive bookings from your wordpress website)
+// open API
+// owner portal (allows property managers to see how their listings perform)
 export const moreFeatures = [
   {
-    name: 'Invite team members',
+    name: 'Reservtion lifecycle',
     description:
-      'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
+      'Define which actions should be performed on guest check-in, check-out',
   },
   {
-    name: 'Notifications',
-    description:
-      'Ornare donec rhoncus vitae nisl velit, neque, mauris dictum duis. Nibh urna non parturient.',
+    name: 'Notifications system',
+    description: 'Receive notification events from all platforms',
   },
   {
-    name: 'List view',
+    name: 'User management',
     description:
-      'Etiam cras augue ornare pretium sit malesuada morbi orci, venenatis. Dictum lacus.',
+      'Invite your staff to the platform. Configure their permission access and define tasks for them',
   },
   {
-    name: 'Boards',
-    description:
-      'Interdum quam pulvinar turpis tortor, egestas quis diam amet, natoque. Mauris sagittis.',
+    name: 'Tasks board',
+    description: 'Define tasks and keep track of the progress',
   },
   {
-    name: 'Keyboard shortcuts',
+    name: 'Direct bookings',
     description:
-      'Ullamcorper in ipsum ac feugiat. Senectus at aliquam vulputate mollis nec. In at risus odio.',
+      'Depend less on your sales channels, receive booking directly with Hostaway',
   },
   {
-    name: 'Reporting',
+    name: 'Integrated payments',
     description:
-      'Magna a vel sagittis aliquam eu amet. Et lorem auctor quam nunc odio. Sed bibendum.',
+      'Receive payments directly from Hostaway. Requires Stripe account',
   },
   {
-    name: 'Calendars',
+    name: 'Smart pricing',
     description:
-      'Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere adipiscing turpis.',
+      'Automatically set a price for your properties based on demand',
   },
   {
-    name: 'Mobile app',
+    name: 'Owner statements',
+    description: 'Configurable property statements to send it to your landlord',
+  },
+  {
+    name: 'Guest reviews',
+    description: 'Keep reviews from all platforms in one place',
+  },
+  {
+    name: 'Wordpress plugin',
+    description: 'Integrate booking widget on your personal website',
+  },
+  {
+    name: 'Booking website',
     description:
-      'Quisque sapien nunc nisl eros. Facilisis sagittis maecenas id dignissim tristique proin sed.',
+      'Hostaway lets you create a webpage with your properties listed to receive direct bookings',
+  },
+  {
+    name: 'Open API',
+    description:
+      'If you need to extend the system you can always do it with the help of our API',
   },
 ]

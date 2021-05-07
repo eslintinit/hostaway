@@ -2,7 +2,10 @@ import ReactPlayer from 'react-player/youtube'
 
 export const Video = () => (
   <div className="flex flex-col items-center w-full">
-    <div className="flex justify-center w-min-content h-80 bg-white rounded-2xl shadow-lg bg-clip-border">
+    <div
+      className="flex justify-center w-min-content h-80 bg-white rounded-2xl shadow-lg bg-clip-border"
+      style={{ zIndex: 1 }}
+    >
       <ReactPlayer
         url="https://www.youtube.com/watch?v=d_JSWHEgFkc&ab_channel=Hostaway"
         controls

@@ -1,25 +1,29 @@
-import { NewspaperIcon, PhoneIcon, SupportIcon } from '@heroicons/react/outline'
+import {
+  HomeIcon,
+  OfficeBuildingIcon,
+  UserGroupIcon,
+} from '@heroicons/react/outline'
 
 export const solutions = [
-  {
-    name: 'For Property Owners',
-    href: '#',
-    description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: PhoneIcon,
-  },
   {
     name: 'For Hotels',
     href: '#',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: SupportIcon,
+      'Manage multi-unit properties, adjust pricing on the hot season, manage your staff and revenue via out platform',
+    icon: HomeIcon,
+  },
+  {
+    name: 'For Companies',
+    href: '#',
+    description:
+      'Out platform works best if you have up to 4000 listings. Define workflows for team of any size',
+    icon: OfficeBuildingIcon,
   },
   {
     name: 'For Individuals',
     href: '#',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: NewspaperIcon,
+      'If you are an individual property owner - we will help you automate the routine and scale your business',
+    icon: UserGroupIcon,
   },
 ]

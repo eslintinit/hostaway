@@ -1,47 +1,73 @@
+import { useEffect, useState } from 'react'
 import { Review } from 'molecules'
-
-const people = [
-  {
-    name: 'Leonard Krasner',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Leonard Krasner',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Leonard Krasner',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Leonard Krasner',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  // More people...
-]
+import { reviews } from 'data'
 
 export const ReviewsCards = () => {
+  const [listOneOffset, setListOneOffset] = useState(0)
+  const [listTwoOffset, setListTwoOffset] = useState(3128)
+  const [listOneHovered, setListOneHovered] = useState(false)
+  const [listTwoHovered, setListTwoHovered] = useState(false)
+
+  useEffect(() => {
+    document.getElementById('list2').scrollTo(3128, 0)
+  }, [])
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (!listOneHovered) {
+        document
+          .getElementById('list1')
+          .scrollTo(document.getElementById('list1').scrollLeft + 1, 0)
+      }
+      if (!listTwoHovered) {
+        document
+          .getElementById('list2')
+          .scrollTo(document.getElementById('list2').scrollLeft - 1, 0)
+      }
+      // setListOneOffset((oldOffset) => oldOffset + 1)
+      // setListTwoOffset((old) => old - 1)
+    }, 50)
+
+    return () => clearInterval(intervalId)
+  }, [listOneHovered, listTwoHovered])
+
+  // onMouseEnter={() => setListOneHovered(true)}
+  // onMouseOver={() => setListOneHovered(false)}
+  // onMouseEnter={() => setListTwoHovered(true)}
+  // onMouseOver={() => setListTwoHovered(false)}
   return (
     <div className="w-full justify-center items-center flex bg-gray-50">
-      <Review />
-      <Review />
-      <Review />
+      <div className="flex flex-col w-full">
+        <div
+          className="flex mb-4 overflow-hidden"
+          style={
+            {
+              // marginLeft: listOneOffset
+            }
+          }
+          id="list1"
+        >
+          {reviews.slice(0, 11).map((review, index) => (
+            <Review review={review} key={review.author + index} />
+          ))}
+        </div>
+        <div
+          className="flex overflow-hidden"
+          style={
+            {
+              // marginLeft: listTwoOffset
+            }
+          }
+          id="list2"
+        >
+          {reviews
+            .reverse()
+            .slice(0, 11)
+            .map((review, index) => (
+              <Review review={review} key={review.author + index} />
+            ))}
+        </div>
+      </div>
     </div>
   )
 }

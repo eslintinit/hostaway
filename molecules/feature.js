@@ -7,7 +7,7 @@ export const Feature = ({ feature }) => (
     </div>
     <div className="mt-6">
       <h3 className="text-lg font-medium text-white">{feature.name}</h3>
-      <p className="mt-2 text-base text-indigo-200">{feature.description}</p>
+      <p className="mt-2 text-base text-gray-100">{feature.description}</p>
     </div>
   </div>
 )

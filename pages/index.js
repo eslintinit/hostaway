@@ -1,33 +1,26 @@
-import { Footer } from '@/molecules'
+import { Header, Footer } from 'molecules'
 import {
-  Hero,
-  ValuePropositionsThreeColumn,
-  CTACentered,
-  Testimonials,
-  FourColumnsGridFeatures,
-  ZapierIntegrations,
-  MobileAppSection,
-  SimpleFeatureGrid,
-  Reviews,
-  Partners,
-} from '@/organisms'
+  ConversionGoalOne,
+  ConversionGoalTwo,
+  ConversionGoalThree,
+  ConversionGoalFour,
+  Engagement,
+} from 'templates'
 
-export default function Home() {
-  return (
-    <div className="flex flex-col">
-      <Hero />
-      <ValuePropositionsThreeColumn />
-      <CTACentered />
-      <Testimonials />
-      <FourColumnsGridFeatures />
-      <ZapierIntegrations />
-      <MobileAppSection />
-      <CTACentered />
-      <SimpleFeatureGrid />
-      <Reviews />
-      <CTACentered />
-      <Partners />
-      <Footer />
-    </div>
-  )
-}
+const HomeNew = () => (
+  <div className="flex flex-col align-center w-full">
+    {/*
+    <Header />
+     */}
+    <ConversionGoalOne />
+    <ConversionGoalTwo />
+    <ConversionGoalThree />
+    {/*
+    <ConversionGoalFour />
+     */}
+    <Engagement />
+    <Footer />
+  </div>
+)
+
+export default HomeNew

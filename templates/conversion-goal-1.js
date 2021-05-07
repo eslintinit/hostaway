@@ -5,7 +5,9 @@ export const ConversionGoalOne = () => (
   <div className="flex flex-col items-center">
     <Hero />
     <ValuePropositions />
-    <CTA />
+    <CTA withReview />
+    {/*
     <Testimonials />
+    */}
   </div>
 )

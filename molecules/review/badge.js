@@ -1,6 +1,21 @@
-export const ReviewBadge = () => (
-  <img
-    src="https://ci5.googleusercontent.com/proxy/sxvIOmN1juOF1VVKJqTdDlHeSLk36vKmI3mykpO0Rex3z-zGx01P5A_kV25N9AdrUwXHmKVe-s5qBmNycCbAYKKZ5UxOXXltlras9oilBhWtqE7ei_VhT4JIusc8mfqQNnALjOvo68RG6zW5RwwyHZ4Whib4_8Cr3Ne-ReIlKbpqBAaLF1U=s0-d-e1-ft#https://hs-3883982.f.hubspotstarter.net/hub/3883982/hubfs/download-1.png?width=246&upscale=true&name=download-1.png"
-    className="h-48"
-  />
+export const ReviewBadge = ({ src, size, rating, noOfReviews, link }) => (
+  <div className="flex flex-col items-center">
+    <a href={link} target="_blank" className="cursor-pointer">
+      <img src={src} className={size} />
+    </a>
+    <RatingLabel rating={rating} noOfReviews={noOfReviews} link={link} />
+  </div>
+)
+
+const RatingLabel = ({ rating, noOfReviews, link }) => (
+  <div
+    id="rating-long"
+    className="tp-widget-rating tp-widget-rating-long text-xs text-gray-700 mt-4"
+  >
+    Rated <strong>{rating}</strong> / 5 based on{' '}
+    <a target="_blank" href={link}>
+      <strong className="underline">{noOfReviews} reviews</strong>
+    </a>
+    .
+  </div>
 )

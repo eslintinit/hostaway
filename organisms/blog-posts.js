@@ -4,7 +4,7 @@ const posts = [
   {
     title: 'The Guide To Buying A Vacation Rental',
     href: '#',
-    category: { name: 'Article', href: '#' },
+    category: { name: 'Blog', href: '#' },
     description: `For many people the prospect of buying a vacation rental is a far away dream. After hundreds of conversations, it's become clear that people tend to overthink the entire process.`,
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
@@ -21,7 +21,7 @@ const posts = [
   {
     title: 'Tips To Keep Your Vacation Rental Marketed All Year Round',
     href: '#',
-    category: { name: 'Video', href: '#' },
+    category: { name: 'Blog', href: '#' },
     description:
       'We all know the struggle of keeping properties filled year-round. Almost all travel destinations have a few month span where tourism dies down and a large chunk of the vacation rentals are sitting vacant.',
     date: 'Mar 10, 2020',
@@ -39,7 +39,7 @@ const posts = [
   {
     title: '4 Revenue Management Best Practices for Short-Term Rentals',
     href: '#',
-    category: { name: 'Case Study', href: '#' },
+    category: { name: 'Tips', href: '#' },
     description:
       'Short-term rental revenue management might still be an ambiguous topic in the industry for some, especially when it comes to defining which operational and business practices actually fall under the revenue management umbrella.',
     date: 'Feb 12, 2020',
@@ -57,7 +57,7 @@ const posts = [
 ]
 
 export const BlogPosts = () => (
-  <div className="relative bg-gray-50 pt-0 pb-20 px-4 sm:px-6 lg:pt-0 lg:pb-28 lg:px-8 w-full">
+  <div className="relative bg-white pt-0 pb-20 px-4 sm:px-6 lg:pt-0 lg:pb-4 lg:px-8 w-full">
     <div className="absolute inset-0">
       <div className="bg-white h-1/3 sm:h-2/3" />
     </div>
@@ -77,7 +77,7 @@ export const BlogPosts = () => (
         {posts.map((post) => (
           <div
             key={post.title}
-            className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+            className="flex flex-col rounded-lg shadow-md overflow-hidden"
           >
             <div className="flex-shrink-0">
               <img

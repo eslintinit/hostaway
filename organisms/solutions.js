@@ -17,16 +17,15 @@ export const Solutions = () => (
           Solutions
         </h1>
         <p className="mt-6 max-w-3xl text-xl text-gray-600">
-          Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id
-          malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.
-          Dui, amet, nec sit pulvinar.
+          Whatever your business needs are - we got you covered <br />
+          Our extendable software covers cases for any type of business
         </p>
       </div>
     </div>
 
     {/* Overlapping cards */}
     <section
-      className="-mt-32 max-w-7xl mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8"
+      className="-mt-32 max-w-7xl mx-auto relative z-10 pb-40 px-4 sm:px-6 lg:px-8"
       aria-labelledby="contact-heading"
     >
       <h2 className="sr-only" id="contact-heading">
@@ -36,10 +35,10 @@ export const Solutions = () => (
         {solutions.map((link) => (
           <div
             key={link.name}
-            className="flex flex-col bg-white rounded-2xl shadow-xl"
+            className="flex flex-col bg-white rounded-2xl shadow-lg"
           >
             <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-              <div className="absolute top-0 p-5 inline-block bg-primary rounded-xl shadow-lg transform -translate-y-1/2">
+              <div className="absolute top-0 p-5 inline-block bg-secondaryDark rounded-xl shadow-lg transform -translate-y-1/2">
                 <link.icon className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>

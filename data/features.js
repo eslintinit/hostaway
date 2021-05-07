@@ -1,12 +1,12 @@
 import {
-  ChatAltIcon,
-  DocumentReportIcon,
-  HeartIcon,
   InboxIcon,
-  PencilAltIcon,
-  ReplyIcon,
-  TrashIcon,
+  CalendarIcon,
   UsersIcon,
+  ChartBarIcon,
+  CogIcon,
+  PresentationChartLineIcon,
+  DeviceMobileIcon,
+  HeartIcon,
 } from '@heroicons/react/outline'
 
 export const features = [
@@ -20,7 +20,7 @@ export const features = [
     name: 'Synced Calendars',
     description:
       "Have calendars synced across all sales channels. Don't worry about double bookings",
-    icon: ReplyIcon,
+    icon: CalendarIcon,
   },
   {
     name: 'Manage Team Members',
@@ -32,24 +32,24 @@ export const features = [
     name: 'Grow in Revenue',
     description:
       'Set dynamic pricing based on property demand. Allow guests to book from you directly. Spend less on fees',
-    icon: DocumentReportIcon,
+    icon: ChartBarIcon,
   },
   {
     name: 'Automation',
     description:
-      'Automate actions as sending messages on guest check-in or assigning cleaning on guest check-out. With our robust system you can automate anything',
-    icon: PencilAltIcon,
+      'Automate actions as sending messages on guest check-in or assigning cleaning on guest check-out',
+    icon: CogIcon,
   },
   {
     name: 'Powerful reporting',
     description:
       'See monthly reports, see which properties work the best. You can track all property expenses on Hostaway',
-    icon: TrashIcon,
+    icon: PresentationChartLineIcon,
   },
   {
     name: 'Mobile app',
     description: 'Manage business on the go',
-    icon: ChatAltIcon,
+    icon: DeviceMobileIcon,
   },
   {
     name: 'Best customer service',
