@@ -114,7 +114,7 @@ function MyApp({ Component, pageProps }) {
         <meta
           data-react-helmet="true"
           property="og:description"
-          content="Manage unlimited vacation rental channel reservations from check-in to check-out on one platform."
+          content="Manage unlimited vacation rental channel reservations from check-in to check-out from one platform."
         />
         <meta
           data-react-helmet="true"

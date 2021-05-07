@@ -13,7 +13,7 @@ export const MoreFeatures = () => {
             Worry less about your properties with our powerful system
           </p>
         </div>
-        <dl className="mt-32 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 lg:grid-cols-3 lg:gap-x-8">
+        <dl className="mt-32 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-14 lg:grid-cols-3 lg:gap-x-8">
           {moreFeatures.map((feature) => (
             <div key={feature.name} className="relative">
               <dt>

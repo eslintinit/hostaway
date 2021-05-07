@@ -7,12 +7,18 @@ export const ReviewsCards = () => {
   const [listTwoOffset, setListTwoOffset] = useState(3128)
   const [listOneHovered, setListOneHovered] = useState(false)
   const [listTwoHovered, setListTwoHovered] = useState(false)
+  const [moved, setMoved] = useState(false)
 
   useEffect(() => {
     document.getElementById('list2').scrollTo(3128, 0)
   }, [])
 
   useEffect(() => {
+    if (!moved) {
+      const el = document.getElementById('list2')
+      el.scrollTo(el.scrollWidth - el.clientWidth, 0)
+      setMoved(true)
+    }
     const intervalId = setInterval(() => {
       if (!listOneHovered) {
         document
@@ -29,7 +35,7 @@ export const ReviewsCards = () => {
     }, 50)
 
     return () => clearInterval(intervalId)
-  }, [listOneHovered, listTwoHovered])
+  }, [moved])
 
   // onMouseEnter={() => setListOneHovered(true)}
   // onMouseOver={() => setListOneHovered(false)}

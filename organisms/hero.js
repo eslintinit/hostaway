@@ -361,7 +361,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-000 mt-1">
+      <div className="bg-gray-000 mt-0">
         <div className="max-w-7xl mx-auto pb-16 px-4 sm:py-16 sm:pt-24 sm:px-6 lg:px-0 flex flex-col items-center w-full">
           <span className="text-gray-400 opacity-90 text-sm mb-4">
             Partnered up with 130+ companies

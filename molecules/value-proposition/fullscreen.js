@@ -51,7 +51,7 @@ const Left = ({ title, img, name, description, style = {}, ...feature }) => (
           </div>
           <div className="mt-6">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-              {title}
+              left {title}
             </h2>
             <p className="mt-4 text-lg text-gray-500">
               {description ||
