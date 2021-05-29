@@ -51,7 +51,7 @@ const Left = ({ title, img, name, description, style = {}, ...feature }) => (
           </div>
           <div className="mt-6">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-              left {title}
+              {title}
             </h2>
             <p className="mt-4 text-lg text-gray-500">
               {description ||
@@ -159,7 +159,11 @@ const Left = ({ title, img, name, description, style = {}, ...feature }) => (
 const Right = ({ title, img, name, description, style = {}, ...feature }) => (
   <div className="w-full" style={style}>
     <div className="lg:mx-auto lg:max-w-7xl lg:px-0 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-16">
-      <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+      <div
+        className={`px-4 max-w-xl mx-auto sm:px-6 lg:py-${
+          name === 'support' ? '16' : '32'
+        } lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2`}
+      >
         <div>
           <div>
             <span className="h-12 w-12 rounded-md flex items-center justify-center bg-primary">
@@ -185,6 +189,14 @@ const Right = ({ title, img, name, description, style = {}, ...feature }) => (
           className={`pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full flex justify-center items-center overflow-hidden rounded-xl ${
             name === 'support' ? 'shadow-md' : ''
           }`}
+          style={
+            name === 'support'
+              ? {
+                  width: '80%',
+                  margin: 'auto',
+                }
+              : {}
+          }
         >
           <img
             className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:h-full lg:w-auto lg:max-w-none left-auto right-auto"

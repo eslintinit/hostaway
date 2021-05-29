@@ -79,10 +79,10 @@ export const fullscreenFeatures = [
           customers as much as we can with growth of their business.
           <br /> <br />
           <span className="font-medium text-gray-800">
-            Deal just with one company
+            Deal with just one company
           </span>
-          , Hostaway, and have a dedicated person for all your enquiries. All
-          your questions in one place.
+          . Hostaway will provide you a dedicated person for all your enquiries.
+          All your questions in one place.
           <br /> <br />
           <a className="text-primary hover:underline cursor-pointer font-medium">
             Let's get in touch!

@@ -52,6 +52,7 @@ export const Webinar = () => (
                   <img
                     className="h-6 w-6 rounded-full"
                     src="https://www.hostaway.com/static/marcus-60f466f60bcd0ad1ca8684cc45fb78ba.jpg"
+                    style={{ objectFit: 'cover' }}
                     alt=""
                   />
                 </div>

@@ -39,8 +39,8 @@ export const Guide = () => (
         <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
           <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
             <img
-              className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-              src="https://uploads-ssl.webflow.com/5ddbc245d31f0fac196e214d/5ddbc245d31f0f39106e219d_Ebook-%2520The%2520Property%2520Managers%2520Guide%2520to%2520Maximizing%2520Booking%2520Income-p-500.jpeg"
+              className="w-full rounded-xl lg:absolute lg:right-0 lg:h-full lg:w-4/5 lg:max-w-none mx-auto"
+              src="/guide.jpeg"
               alt="Customer profile user interface"
             />
           </div>

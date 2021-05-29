@@ -14,11 +14,11 @@ export const CaseStudies = () => (
           Customer Success Stories
         </span>
         <div className="flex flex-col justify-between my-12">
-          <span className="text-2xl font-extrabold text-gray-800">
+          <span className="text-2xl font-bold text-gray-800">
             <span className="text-primary">Read our client stories</span> and
             see how
             <br />
-            we're helping to transform their business
+            we're helping them to transform their businesses
           </span>
 
           <span className="my-6 text-lg text-gray-600 opacity-90">

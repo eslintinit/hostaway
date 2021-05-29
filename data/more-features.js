@@ -13,7 +13,7 @@
 // owner portal (allows property managers to see how their listings perform)
 export const moreFeatures = [
   {
-    name: 'Reservtion lifecycle',
+    name: 'Reservation lifecycle',
     description:
       'Define which actions should be performed on guest check-in, check-out',
   },
@@ -24,7 +24,7 @@ export const moreFeatures = [
   {
     name: 'User management',
     description:
-      'Invite your staff to the platform. Configure their permission access and define tasks for them',
+      'Invite your staff to the platform. Configure their permissions and define tasks for them',
   },
   {
     name: 'Tasks board',
